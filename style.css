@@ -1,0 +1,496 @@
+/*通常PC向け*/
+
+@media screen and (min-width: 992px) {
+    /*コンテナの設定*/
+    .container-fluid h2 {
+        font-size: 4rem;
+        color: #444444;
+    }
+    .container-fluid p {
+        font-size: 2rem;
+        color: #444444;
+    }
+    .fadein {
+        opacity: 0;
+        animation: fadein 3s ease forwards;
+    }
+    @keyframes fadein {
+        100% {
+            opacity: 1;
+        }
+    }
+    /*以下遅延の指定*/
+    .txt01 {
+        animation-delay: 0.05s;
+    }
+    .txt02 {
+        animation-delay: 1s;
+    }
+    /*ナビ関連の設定*/
+    .nav_fix {
+        width: 100%;
+        background-color: #fff;
+        padding: 60px 20px;
+        position: fixed;
+        z-index: 9999;
+    }
+    .nav {
+        list-style: none;
+        overflow: hidden;
+        padding: 0px;
+        display: flex;
+        height: 100px;
+        font-size: 40px;
+    }
+    .nav li {
+        text-align: center;
+        font-size: 70%;
+        display: inline-block;
+        vertical-align: middle;
+        height: 80%;
+        width: 40%;
+        padding-top: 2.5%;
+        text-align: right;
+    }
+    .nav li a {
+        font-weight: bold;
+        text-decoration: none;
+        color: #444444;
+    }
+    .nav li a:hover {
+        color: #CCCCCC;
+    }
+    /*スライドショーnの設定編集*/
+    .slideshow {
+        position: relative;
+        width: 1800px;
+        height: 300px;
+        padding-top: 10rem;
+        margin-bottom: 20rem;
+    }
+    .slideshow img {
+        position: absolute;
+        left: 2rem;
+        opacity: 0;
+        transition: 0.5s;
+    }
+    .slideshow .show {
+        opacity: 1;
+        z-index: 1;
+    }
+    /*イベント・ブログ一覧の設定編集*/
+    .list_box {
+        display: flex;
+        width: 70%;
+        margin: 5rem auto 5rem;
+    }
+    .list_box ul {
+        list-style: none;
+        width: 100%;
+    }
+    .list_box a {
+        font-size: 1rem;
+        color: #444444;
+        text-decoration: none;
+        padding: 0;
+    }
+    .list_box a:hover {
+        color: #CCCCCC;
+    }
+    .list_box p {
+        font-size: 1rem;
+        color: #f4676c;
+        margin: 0;
+    }
+    .list_box hr {
+        color: #f4676c;
+        border-top: solid 1px;
+    }
+    .list_box img {
+        width: 100%;
+    }
+    /*whats onの設定編集*/
+    /*プロフィール・googleマップの設定編集*/
+    .plofile_style {
+        display: flex;
+        width: 70%;
+        margin: 10rem auto;
+    }
+    .plofile_style table {
+        white-space: nowrap;
+        width: 65%;
+    }
+    .plofile_style tr {
+        border-bottom: 1px solid #f4676c;
+    }
+    .plofile_style th,
+    td {
+        padding: 0.5rem 2rem;
+        font-size: 1.5rem;
+        color: #444444;
+    }
+    .plofile_style th {
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: bold;
+        margin: 0.5rem;
+    }
+    .plofile_style iframe {
+        width: 35%;
+        margin-left: 2rem;
+    }
+    /*footer全体のスタイルと画像大きさ調整*/
+    .footer_style {
+        margin: auto;
+        width: 80%;
+        margin-top: 10%;
+    }
+    /*snsの横並び、アイコン大きさなど*/
+    .footer_sns_style ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style: none;
+    }
+    .footer_sns_style ul img:hover {
+        width: 37%;
+    }
+    .footer_sns_style ul li img {
+        width: 40%;
+        height: auto;
+    }
+    /*footerの説明ナビのスタイル*/
+    .footer_nav {
+        margin-top: 5%;
+        color: #444444;
+    }
+    .footer_nav img {
+        width: 80%;
+        height: auto;
+        margin-bottom: 30%
+    }
+    .footer_nav h2 {
+        font-size: 1.5rem;
+    }
+    .footer_nav ul {
+        list-style: none;
+    }
+    .footer_nav ul a {
+        text-decoration: none;
+        color: #444444;
+    }
+    .footer_nav ul a:hover {
+        font-size: 1.1rem;
+    }
+    .contents_style {
+        padding: 5% 2% 15% 2%;
+        width: 100%;
+    }
+    .contents_style h2 {
+        padding: 20% 2% 0% 2%;
+    }
+    .contents_style p {
+        padding: 5% 1%;
+    }
+    .contents_style a {
+        width: 100%;
+        text-align: center;
+        padding: 1% 5%;
+        background-color: #444444;
+        font-size: 150%;
+        color: #fff;
+        border-radius: 20px;
+        text-decoration: none;
+    }
+    .contents_style a:hover {
+        background-color: #fff;
+        color: #444444;
+        border: 2px solid;
+        border-color: #444444;
+    }
+    .contents_style img {
+        padding: 15% 0% 0% 0%;
+    }
+    .contents_style02 {
+        background-color: #F0F8FF;
+    }
+}
+
+
+/*タブレット（大）向け*/
+
+@media screen and (min-width:767px) and (max-width:991px) {
+    /*コンテナの設定*/
+    .container-fluid {
+        width: 100vw;
+        height: 100vh;
+    }
+    .container-fluid h2 {
+        font-size: 2rem;
+        color: #444444;
+    }
+    .container-fluid p {
+        font-size: 1rem;
+        color: #444444
+    }
+    /*ナビ関連の設定*/
+    #nav {
+        list-style: none;
+        overflow: hidden;
+        padding: 0px;
+        display: flex;
+        height: 50px;
+        font-size: 20px;
+    }
+    #nav li {
+        text-align: center;
+        font-size: 70%;
+        display: inline-block;
+        vertical-align: middle;
+        height: 80%;
+        width: 33%;
+        padding-top: 2.5%;
+    }
+    #nav li a {
+        font-weight: bold;
+        text-decoration: none;
+    }
+    /*スライドショーnの設定編集*/
+    /*イベント・ブログ一覧の設定編集*/
+    /*whats onの設定編集*/
+    /*プロフィール・googleマップの設定編集*/
+    /*footer全体のスタイルと画像大きさ調整*/
+    .footer_style {
+        margin: auto;
+        width: 80%;
+        margin-top: 10%;
+    }
+    /*snsの横並び、アイコン大きさなど*/
+    .footer_sns_style ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style: none;
+    }
+    .footer_sns_style ul img:hover {
+        width: 37%;
+    }
+    .footer_sns_style ul li img {
+        width: 40%;
+        height: auto;
+    }
+    /*footerの説明ナビのスタイル*/
+    .footer_nav {
+        margin-top: 5%;
+        color: #444444;
+    }
+    .footer_nav img {
+        width: 80%;
+        height: auto;
+        margin-bottom: 30%;
+    }
+    .footer_nav h2 {
+        font-size: 0.8rem;
+    }
+    .footer_nav ul {
+        list-style: none;
+        padding: 0% 0 40% 0;
+    }
+    .footer_nav ul a {
+        text-decoration: none;
+        color: #444444;
+        font-size: 0.5rem;
+    }
+    .footer_nav ul a:hover {
+        font-size: 65%;
+    }
+}
+
+
+/*タブレット(小)向け*/
+
+@media screen and (min-width:544px) and (max-width:767px) {
+    /*コンテナの設定*/
+    .container-fluid {
+        width: 100vw;
+        height: 100vh;
+    }
+    .container-fluid h2 {
+        font-size: 2rem;
+        color: #444444;
+    }
+    .container-fluid p {
+        font-size: 1rem;
+        color: #444444;
+    }
+    /*ナビ関連の設定*/
+    #nav {
+        list-style: none;
+        overflow: hidden;
+        padding: 0px;
+        display: flex;
+        height: 50px;
+        font-size: 20px;
+    }
+    #nav li {
+        text-align: center;
+        font-size: 70%;
+        float: left;
+        display: inline-block;
+        vertical-align: middle;
+        height: 80%;
+        width: 33%;
+        padding-top: 2.5%;
+    }
+    #nav li a {
+        font-weight: bold;
+        text-decoration: none;
+    }
+    /*スライドショーnの設定編集*/
+    /*イベント・ブログ一覧の設定編集*/
+    /*whats onの設定編集*/
+    /*プロフィール・googleマップの設定編集*/
+    /*footer全体のスタイルと画像大きさ調整*/
+    .footer_style {
+        margin: auto;
+        width: 80%;
+        margin-top: 10%;
+    }
+    /*snsの横並び、アイコン大きさなど*/
+    .footer_sns_style ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style: none;
+    }
+    .footer_sns_style ul img:hover {
+        width: 37%;
+    }
+    .footer_sns_style ul li img {
+        width: 40%;
+        height: auto;
+    }
+    /*footerの説明ナビのスタイル*/
+    .footer_nav {
+        margin-top: 5%;
+        color: #444444;
+    }
+    .footer_nav img {
+        display: none;
+        width: 0%;
+        height: auto;
+        margin-bottom: 30%
+    }
+    .footer_nav h2 {
+        font-size: 0.8rem;
+    }
+    .footer_nav ul {
+        list-style: none;
+        padding: 0% 0 40% 0;
+    }
+    .footer_nav ul a {
+        text-decoration: none;
+        color: #444444;
+        font-size: 0.5rem;
+    }
+    .footer_nav ul a:hover {
+        font-size: 65%;
+    }
+}
+
+
+/*スマホ向け*/
+
+@media screen and (max-width:543px) {
+    /*コンテナの設定*/
+    .container-fluid {
+        width: 100vw;
+        height: 100vh;
+    }
+    .container-fluid h2 {
+        font-size: 1.7rem;
+        color: #444444;
+    }
+    .container-fluid p {
+        font-size: 0.7rem;
+        color: #444444;
+    }
+    /*ナビ関連の設定*/
+    #nav {
+        list-style: none;
+        overflow: hidden;
+        padding: 0px;
+        display: flex;
+        height: 50px;
+        font-size: 20px;
+    }
+    #nav li {
+        text-align: center;
+        font-size: 70%;
+        float: left;
+        display: inline-block;
+        vertical-align: middle;
+        height: 80%;
+        width: 33%;
+        padding-top: 2.5%;
+    }
+    #nav li a {
+        font-weight: bold;
+        text-decoration: none;
+    }
+    /*スライドショーnの設定編集*/
+    /*イベント・ブログ一覧の設定編集*/
+    /*whats onの設定編集*/
+    /*プロフィール・googleマップの設定編集*/
+    /*footer全体のスタイルと画像大きさ調整*/
+    .footer_style {
+        margin: auto;
+        width: 80%;
+        margin-top: 10%;
+    }
+    /*snsの横並び、アイコン大きさなど*/
+    .footer_sns_style ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style: none;
+    }
+    .footer_sns_style ul img:hover {
+        width: 37%;
+    }
+    .footer_sns_style ul li img {
+        width: 40%;
+        height: auto;
+    }
+    /*footerの説明ナビのスタイル*/
+    .footer_nav {
+        margin-top: 5%;
+        color: #444444;
+    }
+    .footer_nav img {
+        display: none;
+        width: 0%;
+        height: auto;
+        margin-bottom: 30%
+    }
+    .footer_nav h2 {
+        font-size: 0.8rem;
+    }
+    .footer_nav ul {
+        list-style: none;
+        padding: 0% 0 40% 0;
+    }
+    .footer_nav ul a {
+        text-decoration: none;
+        color: #444444;
+        font-size: 0.5rem;
+    }
+    .footer_nav ul a:hover {
+        font-size: 0.6rem;
+    }
+}
+
+.about_content {
+    display: flex;
+    width: 50%;
+}
